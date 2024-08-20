@@ -26,18 +26,18 @@ schedule.
 ## Demo
 ### Customize your learning plan
 ![](docs/demo1.gif)
-Tell Coursify what you need: from the course title to the main goal, this 
-intuitive form guides you to make a learning plan suited for you.
+Tell Coursify your needs: from the course title to the main goals, this 
+intuitive form helps you create a personalized learning plan.
 
 ### Generate the syllabus
 ![](docs/demo2.gif)
-Doing so is just as easy as clicking a button. Wait for a few minutes and you'll
-be served up the perfect learning plan for you!
+Simply click the button to generate your syllabus. Within moments, you’ll 
+receive a tailored learning plan designed just for you.
 
 ### Copy anywhere for convenience
 ![](docs/demo3.gif)
-Take your learning plan anywhere with ease! Just click the Copy button and 
-you can put it in your preferred word processor.
+Easily copy your learning plan to your clipboard and paste it into any document 
+or note-taking app. Convenient and hassle-free!
 
 <!-- ## Running Locally
 
