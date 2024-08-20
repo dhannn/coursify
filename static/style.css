@@ -87,3 +87,7 @@ textarea {
     border-color: #1a1a1a0f;
     background: #1a1a1a;
 }
+
+.result {
+    line-height: 1.5;
+}
