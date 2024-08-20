@@ -23,7 +23,21 @@ schedule.
 - Easy-to-use web interface.
 - Copies generated syllabi to clipboard.
 
-<!-- ## Demo -->
+## Demo
+### Customize your learning plan
+![](docs/demo1.gif)
+Tell Coursify what you need: from the course title to the main goal, this 
+intuitive form guides you to make a learning plan suited for you.
+
+### Generate the syllabus
+![](docs/demo2.gif)
+Doing so is just as easy as clicking a button. Wait for a few minutes and you'll
+be served up the perfect learning plan for you!
+
+### Copy anywhere for convenience
+![](docs/demo3.gif)
+Take your learning plan anywhere with ease! Just click the Copy button and 
+you can put it in your preferred word processor.
 
 <!-- ## Running Locally
 
