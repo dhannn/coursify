@@ -1,10 +1,12 @@
 # Coursify - Create a structured learning experience personalized for you!
 
 Coursify is a web application that can generate **custom course syllabi** or 
-learning plans tailored to your specific needs. Whether you want to hone a 
-new skill or dive deep into a concept you're passionate about, Coursify 
-provides **a structured learning** path that fits you perfectly, 
-**eliminating the aimless drifting** often associated with self-directed learning.
+learning plans tailored to your specific needs. 
+
+Whether you want to hone a new skill or dive deep into a concept you're 
+passionate about, Coursify provides **a structured learning** path that fits 
+you perfectly, **eliminating the aimless drifting** often associated with 
+self-directed learning.
 
 ## Table of Contents
 - [Features](#features) <!-- - [Demo](#demo) -->
@@ -16,7 +18,8 @@ provides **a structured learning** path that fits you perfectly,
 ## Features
 - Generates a course syllabus based on a title, the objectives and the target 
 audience.
-- Supports different course duration and weekly hour commitment.
+- Flexible options for course duration and weekly hour commitment to match your 
+schedule.
 - Easy-to-use web interface.
 - Copies generated syllabi to clipboard.
 
@@ -61,5 +64,4 @@ contact me at [daniel_ramos@dlsu.edu.ph](mailto:daniel_ramos@dlsu.edu.ph)
 ## Further Enhancements
 - Enhance form validation and error handling
 - Implement a download feature for syllabi as PDF
-- 
- 
+- Better UI for the copy button

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coursify | Structure your learning</title>
+        <link rel='stylesheet' type='text/css' href='/static/style.css'>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class='main-wrapper'>       
+            <h1 class='title'>Coursify</h1>
+            <h2 class='subtitle'>Structure your learning</h2>
+            
+            {% if result_html %}
+            <div class='copy-clipboard-wrapper'>
+                <button class='copy-clipboard' onclick='copyToClipboard("{{result_markdown}}")'>Copy</button>
+            </div>
+            {% endif %}
+
+            <div class='result'>  
+                {{ result_html }}
+            </div>
+
+
+            <form action='/' method='post'>
+                <div class='form-section'>
+                    <label class='required-field'>Course Title</label>
+                    <input type='text' name='course-title' required>
+                </div>
+                
+                <div class='form-section'>
+                    <label>Describe what you want from the course</label>
+                    <textarea placeholder='I want to be able to...' name='objectives'></textarea>
+                </div>
+
+                <div class='form-section'>
+                    <label>Describe the target audience</label>
+                    <textarea placeholder='This course is for...' name='target-audience'></textarea>
+                </div>
+
+                <div class='form-section'>
+                    <fieldset>
+                        <legend class='required-field'>How many hours are you willing to commit per week?</legend>
+                        <div>
+                            <input name='weekly-commitment' type='radio' id='time-1-3' value='1 - 3 hours' required>
+                            <label for='time-1-3'>1 - 3 hours</label>
+                        </div>
+                        <div>
+                            <input name='weekly-commitment' type='radio' id='time-3-4' value='3 - 4 hours'>
+                            <label for='time-3-4'>3 - 4 hours</label>
+                        </div>
+                        <div>
+                            <input name='weekly-commitment' type='radio' id='time-4-6' value='4 - 6 hours'>
+                            <label for='time-4-6'>4 - 6 hours</label>
+                        </div>
+                        <div>
+                            <input name='weekly-commitment' type='radio' id='time-6-10' value='6 - 10 hours'>
+                            <label for='time-6-10'>6 - 10 hours</label>
+                        </div>
+                    </fieldset>
+                </div>
+                
+                <div class='form-section'>
+                    <fieldset>
+                        <legend class='required-field'>How many weeks will this course take?</legend>
+                        <div>
+                            <input name='duration' type='radio' id='short-course' value='Short course (4 weeks)' required>
+                            <label for='short-course'>Short course (4 weeks)</label>
+                        </div>
+                        <div>
+                            <input name='duration' type='radio' id='trimestral' value='Trimestral (13 weeks)'>
+                            <label for='trimestral'>Trimestral (13 weeks)</label>
+                        </div>
+                        <div>
+                            <input name='duration' type='radio' id='semestral' value='Semestral (16 weeks)'>
+                            <label for='semestral'>Semestral (16 weeks)</label>
+                        </div>
+                    </fieldset>
+                </div>
+                
+                <div class='form-section'>
+                    <label>Other comments about the course</label>
+                    <textarea placeholder='The course should...' name='other-comments'></textarea>
+                </div>
+
+                <input type='submit' value='Coursify' class='coursify-button'>
+            </form>
+        </div>
+
+        <script>
+            function copyToClipboard(text) {
+                navigator.clipboard.writeText(text).then(() => {
+                    alert('Text copied to clipboard!');
+                }).catch(err => {
+                    console.error('Failed to copy text: ', err);
+                });
+            }
+        </script>
+    </body>
+</html>
