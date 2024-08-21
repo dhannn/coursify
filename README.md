@@ -9,8 +9,10 @@ you perfectly, **eliminating the aimless drifting** often associated with
 self-directed learning.
 
 ## Table of Contents
-- [Features](#features) <!-- - [Demo](#demo) -->
-- [Installation](#installation) <!-- - [Usage](#usage) --> <!-- - [Technologies](#technologies) --> <!-- - [API Integration](#api-integration) -->
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation) <!-- - [Usage](#usage) -->
+- [Technologies](#technologies) <!-- - [API Integration](#api-integration) -->
 - [Project Structure](#project-structure)
 - [Contact Information](#contact-information)
 - [Further Enhancements](#further-enhancements)
