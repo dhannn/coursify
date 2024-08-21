@@ -80,4 +80,5 @@ contact me at [daniel_ramos@dlsu.edu.ph](mailto:daniel_ramos@dlsu.edu.ph)
 ## Further Enhancements
 - Enhance form validation and error handling
 - Implement a download feature for syllabi as PDF
+- Deployment to an external server
 - Better UI for the copy button
