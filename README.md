@@ -9,8 +9,10 @@ you perfectly, **eliminating the aimless drifting** often associated with
 self-directed learning.
 
 ## Table of Contents
-- [Features](#features) <!-- - [Demo](#demo) -->
-- [Installation](#installation) <!-- - [Usage](#usage) --> <!-- - [Technologies](#technologies) --> <!-- - [API Integration](#api-integration) -->
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation) <!-- - [Usage](#usage) -->
+- [Technologies](#technologies) <!-- - [API Integration](#api-integration) -->
 - [Project Structure](#project-structure)
 - [Contact Information](#contact-information)
 - [Further Enhancements](#further-enhancements)
@@ -78,4 +80,5 @@ contact me at [daniel_ramos@dlsu.edu.ph](mailto:daniel_ramos@dlsu.edu.ph)
 ## Further Enhancements
 - Enhance form validation and error handling
 - Implement a download feature for syllabi as PDF
+- Deployment to an external server
 - Better UI for the copy button
