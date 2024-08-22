@@ -11,8 +11,22 @@ body {
     padding: 10vh 0 15vh 0;
 }
 
+.heading {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    justify-content: center;
+}
+
+.logo {
+    width: 5vw;
+    height: 5vw;
+    background-image: url(coursify-logo.png);
+    background-size: contain;
+}
+
 .title, .subtitle {
-    text-align: center;
+    text-align: left;
 }
 
 .title {
