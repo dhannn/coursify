@@ -8,7 +8,7 @@ body {
     position: absolute;
     left: 25%;
     right: 25%;
-    padding: 10vh 0 15vh 0;
+    padding: 7.5vh 0 15vh 0;
 }
 
 .heading {
@@ -35,9 +35,13 @@ body {
 }
 
 .subtitle {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 300;
     margin: 0;
+    left: 0.2vw;
+    position: relative;
+    text-transform: uppercase;
+    
 }
 
 .form-section {
@@ -47,7 +51,7 @@ body {
 }
 
 form {
-    margin-top: 7.5vh;
+    margin-top: 7vh;
 }
 
 label, legend {
@@ -102,6 +106,37 @@ textarea {
     background: #1a1a1a;
 }
 
+.secondary-button {
+    position: relative;
+    top: 2vh;
+    padding: 1vh 1.5vw;
+    display: block;
+    border-radius: 10px;
+    border-style: solid;
+    color: #1a1a1a;
+    border-color: #1a1a1a0f;
+    background: #fafafa;
+}
+
 .result {
     line-height: 1.5;
+}
+
+.ai-footer {
+    position: fixed;
+    background-color: #1a1a1a;
+    color: white;
+    width: 100vw;
+    bottom: 0;
+    text-align: center;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0.25rem;
+    opacity: 0.9;
+}
+
+.ai-footer > p {
+    padding: 0.5vh 0;
+    margin: 0;
 }

@@ -25,6 +25,7 @@
             {% if result_html %}
             <div class='copy-clipboard-wrapper'>
                 <button class='copy-clipboard' onclick='copyToClipboard("{{result_markdown}}")'>Copy</button>
+                <button class='secondary-button' onclick='savePDF("{{title}}", "{{result_pdf}}")'>Download as PDF</button>
             </div>
             {% endif %}
 
@@ -98,6 +99,10 @@
             </form>
         </div>
 
+        <div class='ai-footer'>
+            <p>✨ Powered by AI</p>
+        </div>
+
         <script>
             function copyToClipboard(text) {
                 navigator.clipboard.writeText(text).then(() => {
@@ -105,6 +110,27 @@
                 }).catch(err => {
                     console.error('Failed to copy text: ', err);
                 });
+            }
+
+            function savePDF(title, result_html) {
+                console.log(`{{result_pdf}}`);
+                
+                fetch('/save_pdf', {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        title: title,
+                        html: result_html
+                    }),
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                }).then(response => response.blob())
+                .then(blob => URL.createObjectURL(blob))
+                .then(url => {
+                    window.open(url, '_blank');
+                    URL.revokeObjectURL(url);
+                });
+
             }
         </script>
     </body>
