@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from api.model import AIGenModel
+from .model import AIGenModel
 from markdown import markdown
 from markupsafe import Markup
 
@@ -28,15 +28,11 @@ def home():
             other_comments
         )
         
-        result_markdown = course_syllabus.replace('\n', '\\n').replace('"', "\"").replace('“', "\"").replace('\'', '\\\'')
+        result_markdown = course_syllabus.replace('\n', '\\n').replace('"', "\\\"").replace('“', "\"").replace('\'', '\\\'')
         result_html = Markup(markdown(course_syllabus))
 
         return render_template(
-            'form.html', result_markdown=course_syllabus
-                .replace('\n', '\\n')
-                .replace('"', "\\\"")
-                # .replace('“', "\"")
-                .replace('\'', '\\\''), 
+            'form.html', result_markdown=result_markdown, 
                 result_html=result_html)
     
     return render_template('form.html')
