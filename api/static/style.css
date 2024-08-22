@@ -21,7 +21,7 @@ body {
 .logo {
     width: 5vw;
     height: 5vw;
-    background-image: url(/api/static/coursify-logo.png);
+    background-image: url(/static/coursify-logo.png);
     background-size: contain;
 }
 
