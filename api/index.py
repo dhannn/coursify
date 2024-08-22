@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from model import AIGenModel
+from api.model import AIGenModel
 from markdown import markdown
 from markupsafe import Markup
 
