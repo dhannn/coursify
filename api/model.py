@@ -16,11 +16,11 @@ class AIGenModel:
             f'I am an individual who thrives in the structure of formal education. '
             f'Deadlines keep me accountable to get things done. Having a structured course outline gives me '
             f'direction and prevents me from being aimless. So if I want to hone a skill, I want it to be '
-            f'structured as a self-directed course. '
-            f'Specifically, I want to be able to {objectives}. With this goal, create a course syllabus/learning plan '
+            f'structured as a self-directed learning plan. '
+            f'Specifically, I want to be able to {objectives}. With this goal, create a learning plan '
             f'for a course titled {course_title}. Assume it is for {target_audience}. However, this is only '
-            f'a means for me to have structure in my learning. It is not and should not be considered as an actual course. '
-            f'Assume {weekly_commitment} of commitment per week for {duration}. The course should also {other_comments}.'
+            f'a means for me to have structure in my learning.'
+            f'Assume {weekly_commitment} of commitment per week for {duration}. The learning plan should also {other_comments}.'
         )
         
         response = self.model.generate_content(prompt)
