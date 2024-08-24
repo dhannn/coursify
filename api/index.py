@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, send_file
 
-from .pdf_saver import save_as_pdf
-from .model import AIGenModel
+from api.pdf_saver import save_as_pdf
+from api.model import AIGenModel
 from markdown import markdown
 from markupsafe import Markup
 
