@@ -50,7 +50,7 @@ def save_pdf():
         course_title = request.get_json()['title']
         html = request.get_json()['html']
 
-        filename = save_as_pdf(course_title, html).split('/', 1)[1]
+        filename = save_as_pdf(course_title, html)
         return send_file(filename, as_attachment=True)
 
 
