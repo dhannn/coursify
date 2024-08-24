@@ -1,1 +1,1 @@
-web: gunicorn api/index:home
+web: gunicorn api.index:home
