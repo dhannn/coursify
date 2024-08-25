@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, send_file
 
+import os
 from pdf_saver import save_as_pdf
 from model import AIGenModel
 from markdown import markdown
@@ -58,5 +59,5 @@ def save_pdf():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
     
