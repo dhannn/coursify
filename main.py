@@ -9,7 +9,7 @@ app = Flask(__name__)
 model = AIGenModel()
 
 @app.route('/', methods=['POST', 'GET'])
-def app():
+def index():
 
     if request.method == 'POST':
         # Retrieve form data
