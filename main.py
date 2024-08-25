@@ -5,6 +5,9 @@ from model import AIGenModel
 from markdown import markdown
 from markupsafe import Markup
 
+import logging
+logging.basicConfig(level=logging.DEBUG)
+
 app = Flask(__name__)
 model = AIGenModel()
 
