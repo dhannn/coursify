@@ -10,7 +10,7 @@ def save_as_pdf(title: str, html):
         config = pdfkit.configuration(wkhtmltopdf=f'bin/wkhtmltopdf.exe')
         pdfkit.from_string(html, filename, configuration=config, css='/static/style.css')
     else:
-        pdfkit.from_string(html, filename, css='/static/style.css')
+        pdfkit.from_string(html, filename, css='static/style.css')
         
 
     return filename
