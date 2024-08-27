@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, request, send_file
 
 from pdf_saver import save_as_pdf
@@ -10,6 +11,8 @@ model = AIGenModel()
 
 @app.route('/', methods=['POST', 'GET'])
 def index():
+
+    print(f'{ os.getenv('NIXPACKS_PKG')}')
 
     if request.method == 'POST':
         # Retrieve form data
