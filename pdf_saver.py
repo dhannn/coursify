@@ -8,7 +8,7 @@ def save_as_pdf(title: str, html):
     filename = '_'.join(title.split(' ')) + '.pdf'
     if environment == 'dev':
         config = pdfkit.configuration(wkhtmltopdf=f'bin/wkhtmltopdf.exe')
-        pdfkit.from_string(html, filename, configuration=config, css='/static/style.css')
+        pdfkit.from_string(html, filename, configuration=config, css='static/style.css')
     else:
         pdfkit.from_string(html, filename, css='static/style.css')
         

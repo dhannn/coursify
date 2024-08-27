@@ -17,15 +17,15 @@
             <div class="heading">
                 <div class="logo"></div>
                 <div class="heading-text">
-                    <h1 class='title'> Coursify</h1>
+                    <h1 class='title'>Coursify</h1>
                     <h2 class='subtitle'>Structure your learning</h2>
                 </div>
             </div> 
             
             {% if result_html %}
             <div class='copy-clipboard-wrapper'>
-                <button class='copy-clipboard' onclick='copyToClipboard("{{result_markdown}}")'>Copy</button>
-                <button class='secondary-button' onclick='savePDF("{{title}}", "{{result_pdf}}")'>Download as PDF</button>
+                <button class='copy-clipboard button primary-button' onclick='copyToClipboard("{{result_markdown}}")'>Copy</button>
+                <button class='download-pdf button secondary-button' onclick='savePDF("{{title}}", "{{result_pdf}}")'>Download as PDF</button>
             </div>
             {% endif %}
 
@@ -113,7 +113,6 @@
             }
 
             function savePDF(title, result_html) {
-                console.log(`{{result_pdf}}`);
                 
                 fetch('/save_pdf', {
                     method: 'POST',

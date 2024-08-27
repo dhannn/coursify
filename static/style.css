@@ -94,12 +94,22 @@ textarea {
     cursor: pointer;
 }
 
+.button {
+    border-radius: 10px;
+    padding: 1vh 1.5vw;
+}
+
 .copy-clipboard {
     position: relative;
     top: 2vh;
-    padding: 1vh 1.5vw;
-    display: block;
-    border-radius: 10px;
+}
+
+.download-pdf {
+    top: 2vh;
+    position: relative;
+}
+
+.primary-button {
     border-style: solid;
     color: #fafafa;
     border-color: #1a1a1a0f;
@@ -107,11 +117,6 @@ textarea {
 }
 
 .secondary-button {
-    position: relative;
-    top: 2vh;
-    padding: 1vh 1.5vw;
-    display: block;
-    border-radius: 10px;
     border-style: solid;
     color: #1a1a1a;
     border-color: #1a1a1a0f;

@@ -33,9 +33,7 @@ def index():
         
         result_markdown = course_syllabus.replace('\n', '\\n').replace('"', "\\\"").replace('“', "\\\"").replace('\'', '\\\'')
         result_html = Markup(markdown(course_syllabus))
-        print(result_html)
 
-        # print(result_html.replace('\n', '\\n').replace('\n', '\\t').replace('"', "\\\"").replace('“', "\"").replace('\'', '\\\''))
 
         return render_template(
             'form.html', result_markdown=result_markdown, 
