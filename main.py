@@ -12,8 +12,6 @@ model = AIGenModel()
 @app.route('/', methods=['POST', 'GET'])
 def index():
 
-    print(f'{ os.getenv("NIXPACKS_PKG")}')
-
     if request.method == 'POST':
         # Retrieve form data
         course_title = request.form.get('course-title', '')
