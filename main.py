@@ -36,12 +36,12 @@ def index():
 
 
         return render_template(
-            'form.html', result_markdown=result_markdown, 
+            'index.html', result_markdown=result_markdown, 
                 result_html=result_html,
                 result_pdf=markdown(course_syllabus).replace('\n', '\\n').replace('\n', '\\t').replace('"', "\\\"").replace('\'', '\\\''),
                 title=course_title)
     
-    return render_template('form.html')
+    return render_template('index.html')
 
 @app.route('/save_pdf', methods=['POST'])
 def save_pdf():
