@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Coursify | Structure your learning</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel='stylesheet' type='text/css' href='static/style.css'>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -75,6 +76,10 @@
                 <div class='form-section'>
                     <fieldset>
                         <legend class='required-field'>How many weeks will this course take?</legend>
+                        <div>
+                            <input name='duration' type='radio' id='short-course' value='Bootcamp (3 - 5 days)' required>
+                            <label for='short-course'>Bootcamp (3 - 5 days)</label>
+                        </div>
                         <div>
                             <input name='duration' type='radio' id='short-course' value='Short course (4 weeks)' required>
                             <label for='short-course'>Short course (4 weeks)</label>
