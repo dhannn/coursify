@@ -1,5 +1,5 @@
+![](docs/Coursify.png)
 # Coursify - Create a structured learning experience personalized for you!
-
 Coursify is a web application that can generate **custom course syllabi** or 
 learning plans tailored to your specific needs. 
 
